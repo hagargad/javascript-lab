@@ -1,47 +1,33 @@
 
-//Question (1)
-// var stop = true;
-// var p =parseInt(prompt("how old are you","0")); 
-// // console.log(p);
-// while(stop){
-//     if(!isNaN(p)) 
-//     switch(p){
-//         case  (p <= 10 && p == 1 ) :
-//            alert ("is Child");
-          
-//         case (p <= 18 && p == 11) :
-//             alert ("is Teenager");
-           
-//         case (p <= 50 && p == 19) :
-//             alert ("is Grown up");
-    
-//         case (p >= 50) :
-//                 alert ("is Old");
-         
-//     }
+// Question (1)
+var stop = true;
 
-    // else alert("have entered a non-integervalue"); 
-    // if(p <= 10 && p == 1){
-    //     alert ("is Child");
-    // }
-    // else if (p <= 18 && p == 11) {
-    //     alert ("is Teenager");
-    // }
-    // else if(p <= 50 && p == 19){
-    //     alert ("is Grown up");
-    // }
-    // else if(p >= 50){
-    //     alert ("is Old");
-    // }
-  
-    
-
+while(stop){
+    var p =parseInt(prompt("how old are you")); 
     // var answer = prompt("do you want to exit (yes,no)");
-
     // if(answer=="yes"){
     //     stop = false;
     // }
-// }
+if(p<0){
+alert("not a valid number");
+}
+  else if(p <= 10 && p >= 1){
+        alert ("is Child");
+    }
+    else if (p <= 18 && p >= 11) {
+        alert ("is Teenager");
+    }
+    else if(p <= 50 && p >= 19){
+        alert ("is Grown up");
+    }
+    else if(p >= 50){
+        alert ("is Old");
+    }
+    else {
+      stop=false;
+    }
+  
+}   
 
 //Question (2)
 
